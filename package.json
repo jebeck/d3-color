@@ -32,6 +32,7 @@
     "src/**/*.js"
   ],
   "scripts": {
+    "build": "rollup src/index.js --file ae/d3-color.js",
     "pretest": "rollup -c",
     "test": "tape 'test/**/*-test.js' && eslint src test",
     "prepublishOnly": "rm -rf dist && yarn test",
